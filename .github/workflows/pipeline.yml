@@ -6,11 +6,6 @@ name: .NET
 on: [workflow_dispatch]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    container: coherentsolutions/rest-training:1.0
-    steps:
-      - run: echo "HELLO WORLD"
   build:
     runs-on: ubuntu-latest
     steps:
