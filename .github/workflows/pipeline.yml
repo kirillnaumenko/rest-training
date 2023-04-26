@@ -23,7 +23,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --logger:"nunit;LogFilePath=test-results.xml"
+      run: dotnet test --logger:"nunit;LogFilePath=test-results.xml" --no-build
       continue-on-error: true
     - name: Generate test results
       uses: actions/upload-artifact@v2
