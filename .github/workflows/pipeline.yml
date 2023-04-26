@@ -13,6 +13,7 @@ jobs:
       - run: echo "HELLO WORLD"
   build:
     runs-on: ubuntu-latest
+    container: coherentsolutions/rest-training:1.0
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
